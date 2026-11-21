@@ -1,0 +1,132 @@
+.preferences-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f6f2;
+}
+
+.preferences-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  color: #292722;
+}
+
+.preferences-back {
+  border: none;
+  background: transparent;
+  color: #a77b55;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.preferences-tag {
+  color: #a77b55;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.preferences-card h1 {
+  color: #292722;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.preferences-description {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.preferences-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.preferences-card label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #292722 !important;
+  margin-bottom: 9px;
+  margin-top: 17px;
+}
+
+.preferences-card input,
+.preferences-card select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #292722 !important;
+  background-color: #ffffff !important;
+  outline: none;
+}
+
+.preferences-card input::placeholder {
+  color: #888888;
+  opacity: 1;
+}
+
+.preferences-card select option {
+  color: #292722;
+  background: #ffffff;
+}
+
+.preferences-card input:focus,
+.preferences-card select:focus {
+  border-color: #a77b55;
+}
+
+.dimension-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.dimension-inputs input {
+  flex: 1;
+  min-width: 0;
+}
+
+.recommend-button {
+  margin-top: 30px;
+  padding: 15px;
+  background: #a77b55;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.recommend-button:hover {
+  background: #805b3d;
+}
+
+@media (max-width: 500px) {
+  .preferences-card {
+    padding: 25px 20px;
+  }
+
+  .preferences-card h1 {
+    font-size: 25px;
+  }
+
+  .dimension-inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+}
